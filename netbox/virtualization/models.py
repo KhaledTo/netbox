@@ -183,7 +183,7 @@ class VirtualMachine(ChangeLoggedModel, ConfigContextModel, CustomFieldModel):
     )
     name = models.CharField(
         max_length=64,
-        unique=True
+        unique=False
     )
     status = models.PositiveSmallIntegerField(
         choices=VM_STATUS_CHOICES,
